@@ -1,0 +1,213 @@
+.navBar{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    border-color: rgb(187, 187, 187);
+    border-top: rgb(117, 20, 228);
+    border-style: solid;
+    justify-content: center;
+    border-width: .1rem;
+    border-top-width: .2rem;
+    border-right: 0rem;
+    border-left: 0rem;
+    margin-left: -5px;
+    margin-right: 0px;
+    padding: .5rem .5;
+    gap: 2rem;
+
+}
+.navItem{
+    margin: 1rem;    
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    flex: 0;
+    flex-shrink: 0;
+    text-decoration: none;
+
+}
+
+.navItem a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(105, 105, 105);
+
+    
+}
+
+.navItem a:hover ,.navItem.current a{
+    text-decoration: none;
+    border-color: antiquewhite;
+    color: rgb(128, 0, 255);
+}
+
+
+
+img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    object-position: 85% ;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+
+.about{
+    flex: 1;
+    order: 1;
+    text-align: center;
+    height: 50rem;
+    max-width:fit-content;
+    padding: 1rem;
+    border-right:1px #ccc solid;
+
+
+}
+
+#aboutTitle{
+    color: rgb(54, 54, 54);
+    font-size: 1.5rem;
+    margin-bottom: 0%;
+}
+#aboutHeader{
+    text-align: center;
+    color: rgb(134, 133, 133);
+}
+
+.title{
+    font-size: 2.5rem;
+    color: rgb(131, 131, 131);
+}
+
+.aboutPage{
+    flex: 2;
+    order: 2;
+    max-width:fit-content;
+    padding: 2rem;
+    text-align: left;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+}
+
+.checkBoxList{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.divCheckBox{
+    display: flex;
+    padding-left: 0%;
+    padding-top: 0%;
+}
+
+.bar{
+    background-color: rgb(212, 212, 212);
+    width: 750%;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.contentBar{
+    background-color: rgb(197, 54, 54);
+    color: white;
+    padding: 1%;
+    border-radius: 15px;
+    
+}
+
+
+.skill{
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.skillBars{
+    flex:2;
+    order:2;
+    max-width: fit-content;
+    padding-right: 40rem;
+    padding-left: 3rem;
+}
+
+.skillList{
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.education{
+    flex: 3;
+    order: 2;
+    max-width: 50rem;
+    padding: 3rem;
+}
+
+.container{
+    display: flex;
+    padding: 1rem;
+}
+.container div{
+    padding: 10px;
+
+}
+.box1{
+    flex: 1;
+    order: 1;
+    
+}
+.box2{
+    flex: 1;
+    order: 2;
+    text-align: right;
+}
+
+.leftInfo{
+    color: rgb(114, 114, 114);
+    font-size: medium;
+}
+
+.interest{
+    flex: 2;
+    order: 2;
+    max-width: fit-content;
+    padding-right: 30rem;
+    padding-left: 3rem;
+
+}
+
+.interestList{
+    padding: 1rem;
+    list-style-type: "-";
+    font-size: 1.3rem;
+    font-family: Georgia, serif;
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    /* padding only if screen is 800px or smaller */
+    /* this has a higher precedence and wins the default padding when */
+    /* the condition is met */
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about{
+        border-right: 0px;
+        border-bottom: 1px #ccc solid;
+    }
+    
+
+}
